@@ -1,4 +1,4 @@
-﻿@page "/fuelPrices"
+﻿@page "/benzin"
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @inject HttpClient Client
@@ -29,7 +29,7 @@ else
     protected override async Task OnInitializedAsync()
     {
 
-        var response = await Client.GetFromJsonAsync<List<GitHubBranch>>("https://magsapi.onrender.com/api/diesel");
+        var response = await Client.GetFromJsonAsync<List<GitHubBranch>>("https://magsapi.onrender.com/api/miles95");
         branches = response;
         StateHasChanged();
     }

@@ -1,0 +1,7 @@
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.exe
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.deps.json
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.runtimeconfig.json
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.pdb

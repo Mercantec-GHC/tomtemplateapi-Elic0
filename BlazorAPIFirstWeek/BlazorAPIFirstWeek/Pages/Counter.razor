@@ -1,0 +1,43 @@
+﻿@page "/timer"
+
+<PageTitle>timer</PageTitle>
+
+<h1>Timer</h1>
+
+<p role="status">Seconds on the timer: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="ToggleCounter">@buttonText</button>
+
+@code {
+    private int currentCount = 0;
+    private bool isRunning = false;
+    private CancellationTokenSource cancellationTokenSource;
+    private string buttonText => isRunning ? "Stop Timer" : "Start Timer";
+
+    private async void ToggleCounter()
+    {
+        if (isRunning)
+        {
+            // Stop the loop
+            isRunning = false;
+            cancellationTokenSource.Cancel();
+        }
+        else
+        {
+            // Start the loop
+            isRunning = true;
+            cancellationTokenSource = new CancellationTokenSource();
+            await IncrementCountLoop(cancellationTokenSource.Token);
+        }
+    }
+
+    private async Task IncrementCountLoop(CancellationToken token)
+    {
+        while (!token.IsCancellationRequested)
+        {
+            currentCount++;
+            StateHasChanged();
+            await Task.Delay(1000); // Adjust the delay as needed
+        }
+    }
+}

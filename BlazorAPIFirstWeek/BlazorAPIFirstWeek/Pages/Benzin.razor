@@ -3,40 +3,32 @@
 @using System.Text.Json.Serialization
 @inject HttpClient Client
 
-<h1>Call web API from a Blazor Server Razor component</h1>
+<h1>Calling web API for benzin prices over the years</h1>
 
-@if (branches is null)
+@if (benzin is null)
 {
     <p>bad luck</p>
 }
 else
 {
-    <ApexChart TItem="GitHubBranch"
-               Title="Diesel Priser">
+    <ApexChart TItem="fuelAPI"
+               Title="Benzin Prices">
 
-        <ApexPointSeries TItem="GitHubBranch"
-                         Items="branches"
+        <ApexPointSeries TItem="fuelAPI"
+                         Items="benzin"
                          SeriesType="@SeriesType.Area"
-                         Name="Gross Value"
+                         Name="Benzin"
                          XValue="@(e => e.Date)"
                          YValue="@(e => e.Price)" />
     </ApexChart>
 }
 @code {
-    private List<GitHubBranch>? branches;
-    private bool getBranchesError;
+    private List<fuelAPI>? benzin;
 
     protected override async Task OnInitializedAsync()
     {
 
-        var response = await Client.GetFromJsonAsync<List<GitHubBranch>>("https://magsapi.onrender.com/api/miles95");
-        branches = response;
-        StateHasChanged();
-    }
-
-    public class GitHubBranch
-    {
-        public decimal Price { get; set; }
-        public DateTime Date { get; set; }
+        base.OnInitialized();
+        benzin = await Client.GetFromJsonAsync<List<fuelAPI>>("https://magsapi.onrender.com/api/miles95");
     }
 }

@@ -3,19 +3,25 @@
 @using System.Text.Json.Serialization
 @inject HttpClient Client
 
-<h1>Call web API from a Blazor Server Razor component</h1>
+<h1>Calling web API from diesel and benzin prices over the years to see the difference</h1>
 
-@if (branches is null)
+@if (diesel is null || benzin is null)
 {
     <p>bad luck</p>
 }
 else
 {
-    <ApexChart TItem="GitHubBranch"
-               Title="Diesel Priser">
+    <ApexChart TItem="fuelAPI"
+               Title="Compared prices">
 
-        <ApexPointSeries TItem="GitHubBranch"
-                         Items="branches"
+        <ApexPointSeries TItem="fuelAPI"
+                         Items="benzin"
+                         SeriesType="@SeriesType.Area"
+                         Name="Gross Value"
+                         XValue="@(e => e.Date)"
+                         YValue="@(e => e.Price)" />
+        <ApexPointSeries TItem="fuelAPI"
+                         Items="diesel"
                          SeriesType="@SeriesType.Area"
                          Name="Gross Value"
                          XValue="@(e => e.Date)"
@@ -23,20 +29,14 @@ else
     </ApexChart>
 }
 @code {
-    private List<GitHubBranch>? branches;
-    private bool getBranchesError;
+    private List<fuelAPI>? diesel;
+    private List<fuelAPI>? benzin;
 
     protected override async Task OnInitializedAsync()
     {
-
-        var response = await Client.GetFromJsonAsync<List<GitHubBranch>>("https://magsapi.onrender.com/api/diesel");
-        branches = response;
-        StateHasChanged();
+        base.OnInitialized();
+        diesel = await Client.GetFromJsonAsync<List<fuelAPI>>("https://magsapi.onrender.com/api/diesel");
+        benzin = await Client.GetFromJsonAsync<List<fuelAPI>>("https://magsapi.onrender.com/api/miles95");
     }
 
-    public class GitHubBranch
-    {
-        public decimal Price { get; set; }
-        public DateTime Date { get; set; }
-    }
 }

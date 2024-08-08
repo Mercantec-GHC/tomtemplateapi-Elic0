@@ -5,3 +5,11 @@ C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWee
 C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.deps.json
 C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.runtimeconfig.json
 C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\BlazorAPIFirstWeek.pdb
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Blazor-ApexCharts.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Authorization.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Components.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Metadata.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Options.dll
+C:\Users\charl\Desktop\tomtemplateapi-Elic0\BlazorAPIFirstWeek\BlazorAPIFirstWeek\obj\Release\net8.0\PubTmp\Out\Microsoft.JSInterop.dll

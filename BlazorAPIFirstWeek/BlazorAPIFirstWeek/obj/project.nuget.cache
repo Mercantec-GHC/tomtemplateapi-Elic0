@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9qcxLZiBVTg=",
+  "dgSpecHash": "w9nVkZ0yfbc=",
   "success": true,
   "projectFilePath": "C:\\Users\\charl\\Desktop\\tomtemplateapi-Elic0\\BlazorAPIFirstWeek\\BlazorAPIFirstWeek\\BlazorAPIFirstWeek.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.jsinterop\\8.0.2\\microsoft.jsinterop.8.0.2.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512"
   ],
   "logs": []

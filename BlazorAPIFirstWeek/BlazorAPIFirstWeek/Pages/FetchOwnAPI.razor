@@ -1,0 +1,24 @@
+﻿@page "/fetchOwnAPI"
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject HttpClient Client
+
+<h1>Calling web API for diesel prices over the years</h1>
+
+@if (diesel is null)
+{
+    <p>bad luck</p>
+}
+else
+{
+    @diesel
+}
+@code {
+    private string? diesel;
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
+        diesel = await Client.GetStringAsync("https://localhost:7083/WeatherForecast");
+    }
+}
